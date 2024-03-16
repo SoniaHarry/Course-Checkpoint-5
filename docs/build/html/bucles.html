@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Cuáles son los diferentes tipos de bucles en Python? &mdash; documentación de DocCheckPoint5 - </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="¿Qué es una lista por comprensión en Python?" href="listascompresion.html" />
+    <link rel="prev" title="¿Qué es un condicional?" href="condicional.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            DocCheckPoint5
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="condicional.html">¿Qué es un condicional?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">¿Cuáles son los diferentes tipos de bucles en Python?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bucle-for">Bucle for</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bucle-while">Bucle while</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#control-de-los-bucles">Control de los bucles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#break">Break</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bucles-anidados">Bucles anidados</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bucle-anidado-con-variables-independientes">Bucle anidado con variables independientes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bucle-anidado-con-variables-dependientes">Bucle anidado con variables dependientes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#por-que-son-utiles">¿Por qué son útiles?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="listascompresion.html">¿Qué es una lista por comprensión en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="argumentos.html">¿Qué es un argumento en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lambda.html">¿Qué es una función Lambda en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pip.html">¿Qué es un paquete pip?</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DocCheckPoint5</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">¿Cuáles son los diferentes tipos de bucles en Python?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/bucles.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cuales-son-los-diferentes-tipos-de-bucles-en-python">
+<h1>¿Cuáles son los diferentes tipos de bucles en Python?<a class="headerlink" href="#cuales-son-los-diferentes-tipos-de-bucles-en-python" title="Link to this heading"></a></h1>
+<p>Los bucles en Python sirven para automatizar la ejecución del código, que en este lenguaje se realiza de forma secuencial, es decir sigue un orden lineal.
+Existen dos tipos: bucle for y bucle while.</p>
+<section id="bucle-for">
+<h2>Bucle for<a class="headerlink" href="#bucle-for" title="Link to this heading"></a></h2>
+<p>Un bucle for se utiliza para iterar sobre una secuencia, es decir, sobre una lista, una tupla, un diccionario, un conjunto o una cadena.
+La iteración depende de la cantidad de objetos recogidos en las líneas y finalizará cuando se completen todos los valores de la lista.</p>
+<div class="admonition-nota admonition">
+<p class="admonition-title">Nota</p>
+<p>El bucle for no requiere que se establezca una variable de indexación de antemano.</p>
+</div>
+<p>Ejemplo</p>
+<p>Imprime los elementos de un lista:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lenguajes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">lenguaje</span> <span class="ow">in</span> <span class="n">lenguajes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lenguaje</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ejemplo</p>
+<p>Imprime números del 1 al 10</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">contador</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition-nota admonition">
+<p class="admonition-title">Nota</p>
+<p>Cuidado al utilizar range si quiero mostrar números del 1 al 10, el segundo parámetro corresponde a la posición que quieres que pare (y no lo incluye).
+Por eso que en el ejemplo se utilice range(1,11)</p>
+</div>
+</section>
+<section id="bucle-while">
+<h2>Bucle while<a class="headerlink" href="#bucle-while" title="Link to this heading"></a></h2>
+<p>El bucle while se suele utilizar cuando no se conoce el número exacto de repeticiones que se darán en el código.
+La palabra reservada «while» ejecuta una porción de código una y otra vez hasta que la condición especificada sea falsa. Es decir, ejecuta una porción de código mientras que la condición sea verdadera.</p>
+<p>Ejemplo</p>
+<p>Imprime ¡Hola, mundo! siempre que sea menor que 10:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, mundo!&quot;</span><span class="p">)</span>
+    <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="admonition-nota admonition">
+<p class="admonition-title">Nota</p>
+<p>El bucle while requiere que se establezca una variable de indexación de antemano.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, mundo!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Si no incrementamos el <code class="docutils literal notranslate"><span class="pre">contador</span></code>, el while anterior entrará en lo que se conoce como bucle infinito.</p>
+</div>
+</section>
+<section id="control-de-los-bucles">
+<h2>Control de los bucles<a class="headerlink" href="#control-de-los-bucles" title="Link to this heading"></a></h2>
+<section id="break">
+<h3>Break<a class="headerlink" href="#break" title="Link to this heading"></a></h3>
+<p>La expresión <code class="docutils literal notranslate"><span class="pre">break</span></code> se utiliza para romper el código, es decir, mientras que continue impide que el bucle de Python de paso a la progresión secuencial y, por lo tanto, pare antes de tiempo la iteración del bloque.</p>
+<p>Ejemplo while</p>
+<p>Sale del bucle cuando el contador es 4 con lo que imprimirá por pantalla ¡Hola, mundo! solo 4 veces</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">contador</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Ejemplo loop</p>
+<p>Sale del bucle cuando el lenguaje es C++ con lo que imprimirá solo estos tres lenguajes «Python», «C» y «C++»</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lenguajes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">lenguaje</span> <span class="ow">in</span> <span class="n">lenguajes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lenguaje</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;C++&quot;</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div>
+</div>
+</section>
+<section id="continue">
+<h3>Continue<a class="headerlink" href="#continue" title="Link to this heading"></a></h3>
+<p>Con la instrucción <code class="docutils literal notranslate"><span class="pre">continue</span></code> podemos detener la iteración actual y continuar con la siguiente.</p>
+<p>Ejemplo while</p>
+<p>Si contador es igual a 4 continue con la siguiente iteración y no imprima el numero 4</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">contador</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
+    <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Ejemplo loop</p>
+<p>No imprimirá el lenguaje «C++»</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lenguajes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">lenguaje</span> <span class="ow">in</span> <span class="n">lenguajes</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;C++&quot;</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lenguaje</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="bucles-anidados">
+<h2>Bucles anidados<a class="headerlink" href="#bucles-anidados" title="Link to this heading"></a></h2>
+<p>En Python pueden programarse bucles aislados o estos loops pueden formar parte de sentencias de otros bloques, convirtiéndose en bucles anidados.
+Se habla de bucles anidados cuando un bucle se encuentra en el bloque de instrucciones de otro bloque.
+Al bucle que se encuentra dentro del otro se le puede denominar bucle interior o bucle interno.
+El otro bucle sería el bucle exterior o bucle externo.</p>
+<p>Los bucles pueden tener cualquier nivel de anidamiento (un bucle dentro de otro bucle dentro de un tercero, etc.).
+Aunque en Python no es necesario, se recomienda que los nombres de las variables de control de los bucles anidados no coincidan, para evitar ambigüedades.</p>
+<section id="bucle-anidado-con-variables-independientes">
+<h3>Bucle anidado con variables independientes<a class="headerlink" href="#bucle-anidado-con-variables-independientes" title="Link to this heading"></a></h3>
+<p>Cuando los valores que toma la variable de control del bucle interno no dependen del valor de la variable de control del bucle externo.</p>
+<p>Ejemplo bucle anidado variables independiente</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;i vale </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> y j vale </span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="bucle-anidado-con-variables-dependientes">
+<h3>Bucle anidado con variables dependientes<a class="headerlink" href="#bucle-anidado-con-variables-dependientes" title="Link to this heading"></a></h3>
+<p>Cuando los valores que toma la variable de control del bucle interno dependen del valor de la variable de control del bucle externo</p>
+<p>Ejemplo bucle anidado variables dependiente</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;i vale </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> y j vale </span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="por-que-son-utiles">
+<h2>¿Por qué son útiles?<a class="headerlink" href="#por-que-son-utiles" title="Link to this heading"></a></h2>
+<p>Los bucles son una herramienta para alterar el flujo normal de un programa.
+Nos permiten repetir una porción de código tantas veces como queramos.</p>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_for_loops.asp">Python Bucle For</a></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_while_loops.asp">Python Bucle While</a></p></li>
+<li><p><a class="reference external" href="https://tutorial.recursospython.com/bucles/#bucles">Bucles</a></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/python/ref_func_range.asp">Función Range</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="condicional.html" class="btn btn-neutral float-left" title="¿Qué es un condicional?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="listascompresion.html" class="btn btn-neutral float-right" title="¿Qué es una lista por comprensión en Python?" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2024, Sonia D.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

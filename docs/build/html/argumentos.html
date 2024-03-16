@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué es un argumento en Python? &mdash; documentación de DocCheckPoint5 - </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="¿Qué es una función Lambda en Python?" href="lambda.html" />
+    <link rel="prev" title="¿Qué es una lista por comprensión en Python?" href="listascompresion.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            DocCheckPoint5
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="condicional.html">¿Qué es un condicional?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bucles.html">¿Cuáles son los diferentes tipos de bucles en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="listascompresion.html">¿Qué es una lista por comprensión en Python?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">¿Qué es un argumento en Python?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#argumentos-posicionales">Argumentos posicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#argumentos-de-palabras-clave">Argumentos de palabras clave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#argumentos-opcionales">Argumentos opcionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lambda.html">¿Qué es una función Lambda en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pip.html">¿Qué es un paquete pip?</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DocCheckPoint5</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">¿Qué es un argumento en Python?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/argumentos.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="que-es-un-argumento-en-python">
+<h1>¿Qué es un argumento en Python?<a class="headerlink" href="#que-es-un-argumento-en-python" title="Link to this heading"></a></h1>
+<p>Para definir que es un argumento tenemos que tener claro la diferencia entre argumentos y parámetros.</p>
+<p>Los parámetros son los nombres que aparecen en la definición de una función.
+Los argumentos son los valores que le pasamos a la una función, o sea los que recibe.</p>
+<p>Ejemplo:</p>
+<img alt="_images/args-params.jpg" class="align-center" src="_images/args-params.jpg" />
+<section id="argumentos-posicionales">
+<h2>Argumentos posicionales<a class="headerlink" href="#argumentos-posicionales" title="Link to this heading"></a></h2>
+<p>Los argumentos posicionales son aquellos argumentos que se pasan en sus correspondientes parámetros en orden.
+Además de incluir el número correcto de argumentos, es importante el orden en el cual se indican los argumentos.
+Los argumentos necesitan ser escritos en el orden exacto, en el que se han declarado los parámetros en la definición de la función.</p>
+<p>Ejemplo</p>
+<p>Vamos a mostrar un ejemplo definiendo una función que construye un saludo a partir de dos parámetros:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mi_saludo</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">edad</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Soy </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> y tengo</span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Forma correcta de llamar a esta función:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span><span class="mi">48</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Si la función es llamada con un solo argumento, ocurrirá un error.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>File «/Users/soniadelgadosierra/Documents/DevCamp/Python3/prueba.py», line 4, in &lt;module&gt;
+mi_saludo(“Sonia”)
+TypeError: mi_saludo() missing 1 required positional argument: “edad”</p>
+</div>
+<p>Si la función es llamada con tres ó más argumentos, ocurrirá un error.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span><span class="mi">48</span><span class="p">,</span><span class="s1">&#39;es&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Traceback (most recent call last):
+File «/Users/soniadelgadosierra/Documents/DevCamp/Python3/prueba.py», line 4, in &lt;module&gt;
+mi_saludo(“Sonia”,48,”Delgado”)
+TypeError: mi_saludo() takes 2 positional arguments but 3 were given</p>
+</div>
+<p>Si a la función no se le pasa ningún argumento, ocurrirá un error.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Traceback (most recent call last):
+File «/Users/soniadelgadosierra/Documents/DevCamp/Python3/prueba.py», line 4, in &lt;module&gt;
+mi_saludo()
+TypeError: mi_saludo() missing 2 required positional arguments: “nombre” and “edad”</p>
+</div>
+</section>
+<section id="argumentos-de-palabras-clave">
+<h2>Argumentos de palabras clave<a class="headerlink" href="#argumentos-de-palabras-clave" title="Link to this heading"></a></h2>
+<p>Otro tipo de argumento además de los argumentos posicionales son los argumentos de palabras clave.
+En este caso, en vez de solo introducir valores en la llamada de la función, es posible especificar el nombre del parámetro y luego el valor que buscas asignarle.
+Además son más flexibles que los argumentos posicionales, ya que el orden de los argumentos no importa.</p>
+<p>Ejemplo</p>
+<p>En el ejemplo anterior:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mi_saludo</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">edad</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Soy </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> y tengo</span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Se podría llamar a la función de la siguiente manera:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span><span class="n">edad</span><span class="o">=</span><span class="mi">48</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Se puede usar tanto argumentos posicionales como de palabras clave, juntos al llamar una función.</p>
+<p>Ejemplo</p>
+<p>Siguiendo con el anterior ejemplo combinamos los dos tipos de argumentos:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span><span class="n">edad</span><span class="o">=</span><span class="mi">48</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition-nota admonition">
+<p class="admonition-title">Nota</p>
+<p>Si utilizamos ambos argumentos primero siempre los posicionales y luego los de palabra clave</p>
+</div>
+<p>En este caso daría error:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mi_saludo</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span><span class="mi">48</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Error</p>
+<p>File «/Users/soniadelgadosierra/Documents/DevCamp/Python3/prueba.py», line 4
+mi_saludo(nombre=”Sonia”,48)
+SyntaxError: positional argument follows keyword argument</p>
+</div>
+</section>
+<section id="argumentos-opcionales">
+<h2>Argumentos opcionales<a class="headerlink" href="#argumentos-opcionales" title="Link to this heading"></a></h2>
+<p>Otro tipo de argumentos son los argumentos opcionales, es decir, los argumentos de la función también pueden tener valores predeterminados.
+Para que una función tenga un valor o valores predeterminados, tienes que asignarlo a un parámetro/s en la definición de la función.
+Esto se realiza mediante el uso de la estructura key=value, donde value será el valor predeterminado del parámetro.</p>
+<p>Los argumentos predeterminados pueden ser combinados con argumentos no predeterminados en la llamada a la función.</p>
+<p>Ejemplo</p>
+<p>En este caso solo el lenguaje es un argumento opcional.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mi_saludo</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">edad</span><span class="p">,</span><span class="n">lenguaje</span><span class="o">=</span><span class="s1">&#39;es&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Soy </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> tengo </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años y mi lenguaje por defecto es </span><span class="si">{</span><span class="n">lenguaje</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+
+<span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">48</span><span class="p">)</span> <span class="c1">#Soy Sonia tengo 48 años y mi lenguaje por defecto es es!</span>
+<span class="n">mi_saludo</span><span class="p">(</span><span class="s1">&#39;Sonia&#39;</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">48</span><span class="p">,</span> <span class="n">lenguaje</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span> <span class="c1">#Soy Sonia tengo 48 años y mi lenguaje por defecto es en!</span>
+</pre></div>
+</div>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aprendepython.es/core/modularity/functions/">Python Fucniones</a></p></li>
+<li><p><a class="reference external" href="https://python-intermedio.readthedocs.io/es/latest/args_and_kwargs.html">Uso de Args y Kwargs</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="listascompresion.html" class="btn btn-neutral float-left" title="¿Qué es una lista por comprensión en Python?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="lambda.html" class="btn btn-neutral float-right" title="¿Qué es una función Lambda en Python?" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2024, Sonia D.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

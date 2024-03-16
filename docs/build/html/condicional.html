@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué es un condicional? &mdash; documentación de DocCheckPoint5 - </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="¿Cuáles son los diferentes tipos de bucles en Python?" href="bucles.html" />
+    <link rel="prev" title="Bienvenido a la documentación del CheckPoint5!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            DocCheckPoint5
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">¿Qué es un condicional?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#if">If</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#elif">Elif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#else">Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#short-hand-if">Short Hand If</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#short-hand-if-else">Short Hand If…Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operadores-ternarios">Operadores Ternarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#and">And</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#or">Or</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#not">Not</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nested-if">Nested If</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bucles.html">¿Cuáles son los diferentes tipos de bucles en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="listascompresion.html">¿Qué es una lista por comprensión en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="argumentos.html">¿Qué es un argumento en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lambda.html">¿Qué es una función Lambda en Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pip.html">¿Qué es un paquete pip?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excepciones.html">Python - Control de Errores</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DocCheckPoint5</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">¿Qué es un condicional?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/condicional.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="que-es-un-condicional">
+<h1>¿Qué es un condicional?<a class="headerlink" href="#que-es-un-condicional" title="Link to this heading"></a></h1>
+<p>Python admite los siguientes condicionales:</p>
+<ul class="simple">
+<li><p>Es igual a: a == b</p></li>
+<li><p>No es igual a: a != b</p></li>
+<li><p>Menos que: a &lt; b</p></li>
+<li><p>Menor o igual a: a &lt;= b</p></li>
+<li><p>Mayor que: a &gt; b</p></li>
+<li><p>Mayor o igual a: a &gt;= b</p></li>
+</ul>
+<p>Los condicionales se utilizan de varias maneras, las más usadas en «sentencias if» y «bucles».</p>
+<p>Una «sentencia if» permite la ejecución condicional de fragmentos de código.
+Un condicional expresa una acción que se realizará si se cumple una condición.</p>
+<div class="admonition-nota admonition">
+<p class="admonition-title">Nota</p>
+<p>Python se basa en la <code class="docutils literal notranslate"><span class="pre">sangría</span></code> (espacios en blanco al principio de una línea) para definir el alcance en el código</p>
+</div>
+<p>Si la <code class="docutils literal notranslate"><span class="pre">sangria</span></code> no es correcta se generará un error como vemos a continuación:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span><span class="mi">18</span><span class="p">:</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Puedes ir a la discoteca&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Error
+IndentationError: expected an indented block after “if” statement on line 1</p>
+</div>
+<section id="if">
+<h2>If<a class="headerlink" href="#if" title="Link to this heading"></a></h2>
+<p>Una «sentencia if» se escribe utilizando la palabra clave «<strong>if</strong>».</p>
+<p>Ejemplo</p>
+<p>Si nuestros hijos son mayores de edad podrán ir a la discoteca.
+La condición es que su edad sea mayor ó igual a 18 y la acción es que si se cumple la condición, podrá ir a la discoteca.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span><span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Puedes ir a la discoteca&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="elif">
+<h2>Elif<a class="headerlink" href="#elif" title="Link to this heading"></a></h2>
+<p>La palabra clave «<strong>elif</strong>» es la forma que tiene Python de decir «si las condiciones anteriores no son verdaderas, intente esta condición».</p>
+<p>Ejemplo</p>
+<p>Si queremos comparar dos números.
+La primera condición comprueba si «a» es mayor que «b», si no lo es entonces comprueba si «a» y «b» son iguales.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a es mayor que b&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Los números son iguales&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="else">
+<h2>Else<a class="headerlink" href="#else" title="Link to this heading"></a></h2>
+<p>La palabra clave «<strong>else</strong>» captura cualquier cosa que no esté cubierta por las condiciones anteriores.</p>
+<p>Ejemplo</p>
+<p>Siguiendo con el ejemplo anterior si queremos comparar dos números.
+La primera condición comprueba si «a» es mayor que «b», si no lo es entonces comprueba si «a» y «b» son iguales, si esta tampoco se cumple entoces entra por el else y muestra que «a es menor que b».</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a es mayor que b&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a y b son iguales&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a es menor que b&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>También puedes tener un else sin elif</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a es mayor que b&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;a no es mayor que b&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="short-hand-if">
+<h2>Short Hand If<a class="headerlink" href="#short-hand-if" title="Link to this heading"></a></h2>
+<p>Si solo tiene una declaración para ejecutar, puede colocarla en la misma línea que la «declaración if»:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a es mayor que b&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="short-hand-if-else">
+<h2>Short Hand If…Else<a class="headerlink" href="#short-hand-if-else" title="Link to this heading"></a></h2>
+<p>Si solo tiene una declaración para ejecutar, una para «if» y otra para «else», puede ponerlas todas en la misma línea:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="operadores-ternarios">
+<h2>Operadores Ternarios<a class="headerlink" href="#operadores-ternarios" title="Link to this heading"></a></h2>
+<p>También puedes tener varias declaraciones «else» en la misma línea.
+Esta técnica se conoce como «Operadores Ternarios» ó «Expresiones Condicionales».</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="and">
+<h2>And<a class="headerlink" href="#and" title="Link to this heading"></a></h2>
+<p>La palabra clave «<strong>and</strong>» es un operador lógico y se utiliza para combinar declaraciones condicionales.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">33</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">c</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ambas condiciones son verdaderas&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="or">
+<h2>Or<a class="headerlink" href="#or" title="Link to this heading"></a></h2>
+<p>La palabra clave «<strong>or</strong>» es un operador lógico y se utiliza para combinar declaraciones condicionales.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">33</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Por lo menos una de las condiciones es verdadera&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="not">
+<h2>Not<a class="headerlink" href="#not" title="Link to this heading"></a></h2>
+<p>La palabra clave «<strong>not</strong>» es un operador lógico y se utiliza para invertir el resultado de la declaración condicional.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">33</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a no es mayor que b&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="nested-if">
+<h2>Nested If<a class="headerlink" href="#nested-if" title="Link to this heading"></a></h2>
+<p>Puede tener sentencias «if» dentro de declaraciones «if», esto se llama sentencias «if anidadas».</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">41</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Above ten,&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;and also above 20!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;but not above 20.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_conditions.asp">Python Conditions and If statements</a></p></li>
+<li><p><a class="reference external" href="https://tutorial.recursospython.com/control-de-flujo/#condicional">Python Control de flujo - Condicionales</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Bienvenido a la documentación del CheckPoint5!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="bucles.html" class="btn btn-neutral float-right" title="¿Cuáles son los diferentes tipos de bucles en Python?" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2024, Sonia D.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
